@@ -21,24 +21,18 @@ The analysis is deliberately conservative and methodologically transparent, foll
 
 ### 2.1 Unified Feature Representation
 
-The stylistic signal is captured by **combining two complementary feature types**:
+The stylistic signal is captured by ***Character ngrams***:
 
-- **Word unigrams**  
-  Capture lexical preferences and function-word usage.
-
-- **Character trigrams**  
+- **Character trigrams - fourgrams**  
   Capture morphological, orthographic, and rhythmic patterns that are more robust across genres and topics.
 
-Both representations are:
+Representation is:
 - Frequency-based
 - L1-normalized
 - Concatenated into a **single unified feature space**
-
-This combination balances interpretability (word features) and robustness (character features), a common strategy in authorship studies of Latin and historical texts.
-
 ---
 
-### 2.2 Optional Text Segmentation
+### 2.2 Text Segmentation
 
 The script supports **optional segmentation** of long texts into fixed-size chunks (default: 1500 words).
 
